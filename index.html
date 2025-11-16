@@ -1,10 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Discord-like Page</title>
+    <meta charset="UTF-8">
+    <title>придурки из дса</title>
+    <style>
+        body{
+            background-image: url('images/2025-11-08 7.13.12 PM.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container{
+            display: flex;
+            background-color: rgba(54, 57, 63, 0.9);
+            border-radius: 15px;
+            overflow: hidden;
+            max-width: 800px;
+            width: 90%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        .form-section{
+            padding: 40px;
+            flex: 1;
+        }
+        
+        .image-section{
+            flex: 1;
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .header{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"]{
+            background-color: #40444b;
+            color: white;
+            border: 1px solid #72767d;
+            padding: 12px;
+            border-radius: 5px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        
+        input[type="submit"]{
+            background-color: #000000;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        
+        label{
+            display: block;
+            margin-bottom: 5px;
+            color: #b9bbbe;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Discord Page</h1>
-    <p>Project is coming soon...</p>
+    <div class="container">
+        <div class="form-section">
+            <div class="header">
+                <h1>Welcome to Discord!</h1>
+                <p>Verify your first account</p>
+            </div>
+            
+            <form>
+                <label>имя введи пж</label>
+                <input type="text" name="name" placeholder="UwU">
+                
+                <label>почту можешь, мне пригодится</label>
+                <input type="email" name="email" placeholder="ogromnyi_penis@email.com">
+                
+                <label>длинну своего карандашика</label>
+                <input type="password" name="password" placeholder="см">
+                
+                <input type="submit" value="Продолжить?">
+            </form>
+        </div>
+        
+        <div class="image-section">
+            <img src="images/2025-11-08 7.13.21 PM.jpg"
+                 alt="My Photo" 
+                 style="max-width: 100%; max-height: 400px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+        </div>
+    </div>
 </body>
 </html>
